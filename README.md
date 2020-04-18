@@ -1,5 +1,6 @@
-Trading Platform: Etoro 
-Data Provider : Quantopian
+Trading Platform: Etoro ( https://www.etoro.com/people/rifaterdemsahin )
+Data Provider : Quantopian ( https://www.quantopian.com/users/5e95614488618b004b5b72d7 )
+
 
 Version 1 Design : https://imgur.com/a/UXICYHu
 
