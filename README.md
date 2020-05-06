@@ -9,7 +9,6 @@ Work flow and requirements : https://www.lucidchart.com/documents/edit/01e7f7ea-
 Basic terminal push Command : git commit . -m 'Erdems mac terminal commit';git push
 
 Slack Channel : https://app.slack.com/client/TCE0LRRM4/GTD0KRJDB
-If discord free could be replaced!
-Discord Channel : https://discord.gg/9EpSH8
+If discord free could be replaced! Discord Channel : https://discord.gg/9EpSH8
 
 # responsibleinvesting
