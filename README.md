@@ -1,6 +1,4 @@
-Trading Platform: Etoro ( https://www.etoro.com/people/rifaterdemsahin )
-Data Provider : Quantopian ( https://www.quantopian.com/users/5e95614488618b004b5b72d7 )
-
+Trading Platform: Etoro ( https://www.etoro.com/people/rifaterdemsahin ))
 
 Version 1 Design : https://imgur.com/a/UXICYHu
 
@@ -8,6 +6,6 @@ Work flow and requirements : https://www.lucidchart.com/documents/edit/01e7f7ea-
 
 Basic terminal push Command : git commit . -m 'Erdems mac terminal commit';git push
 
-If discord free could be replaced! Discord Channel : https://discord.gg/9EpSH8
+Discord Channel : https://discord.gg/9EpSH8
 
-# responsibleinvesting
+# swingtradingplatform
