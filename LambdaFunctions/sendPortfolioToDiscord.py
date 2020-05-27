@@ -2,10 +2,11 @@
 import json
 from urllib.request import urlopen, Request
 import urllib
-from bs4 import BeautifulSoup
+import re
+
 
 def sendPortfolioToDiscord(event, context):
-    url = 'https://www.etoro.com/people/rifaterdemsahin/portfolio'
+    url = 'https://www.etoro.com/people/rifaterdemsahin?utm_medium=Direct&utm_source=55714&utm_content=0&utm_serial=SocialShareUrlcopyLink_11356642&utm_campaign=SocialShareUrlcopyLink_11356642&utm_term='
     headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) ' 
                       'AppleWebKit/537.11 (KHTML, like Gecko) '
                       'Chrome/23.0.1271.64 Safari/537.11',
@@ -16,27 +17,12 @@ def sendPortfolioToDiscord(event, context):
         'Connection': 'keep-alive'}
     
     req = Request(url=url, headers=headers) 
-    html = urlopen(req).read() 
+    html = urlopen(req).read().decode('utf-8') 
+    text_filtered = re.sub(r'<(.*?)>', '', html)
+    
+    print(html)
 
-    soup = BeautifulSoup(html)
-    
-    # kill all script and style elements
-    for script in soup(["script", "style"]):
-        script.extract()    # rip it out
-    
-    # get text
-    text = soup.get_text()
-    
-    # break into lines and remove leading and trailing space on each
-    lines = (line.strip() for line in text.splitlines())
-    # break multi-headlines into a line each
-    chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
-    # drop blank lines
-    text = '\n'.join(chunk for chunk in chunks if chunk)
-    
-    print(text)
-
-    print(output)
+#this output has an iframe in it so it is not useful we need to wait for the api
 
 
 
